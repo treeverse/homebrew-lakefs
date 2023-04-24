@@ -1,6 +1,7 @@
 # homebrew-lakefs
 
 Homebrew formula for installing lakeFS.
+Package include lakefs and lakectl commands.
 
 ## How To Use
 
@@ -16,7 +17,7 @@ Install [lakeFS](https://github.com/treeverse/lakeFS):
 brew install lakefs
 ```
 
-Upgrade the lakeFS to the latest version:
+Upgrade the [lakeFS](https://github.com/treeverse/lakeFS) to the latest version:
 
 ```sh
 brew upgrade lakefs
