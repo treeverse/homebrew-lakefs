@@ -9,8 +9,8 @@ class Lakefs < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/treeverse/lakeFS/releases/download/v0.99.1/lakeFS_ 0.99.1_Darwin_arm64.tar.gz"
-      sha256 "25c0a6ae82802acef6ce0c6597e2ca1a997fa4e803c2c0702af3a86638a06a8b"
+      url "https://github.com/treeverse/lakeFS/releases/download/v0.99.1/lakeFS_0.99.1_Darwin_arm64.tar.gz"
+      sha256 "84c2c1768e7864f8f9b5aed10861e83184da6977b70714bcece7492a88bb15e2"
 
       def install
         bin.install "lakectl"
@@ -18,8 +18,8 @@ class Lakefs < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/treeverse/lakeFS/releases/download/v0.99.1/lakeFS_ 0.99.1_Darwin_x86_64.tar.gz"
-      sha256 "9f98ca14b868d2da1319bce14f01ff4fd2c5a0765fec30f0d66d3d316a008b7d"
+      url "https://github.com/treeverse/lakeFS/releases/download/v0.99.1/lakeFS_0.99.1_Darwin_x86_64.tar.gz"
+      sha256 "4c9a1144c99571b54b5d93359e8fd4f4e57e33dd5a2631ee5a935460b7ef4434"
 
       def install
         bin.install "lakectl"
@@ -30,8 +30,8 @@ class Lakefs < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/treeverse/lakeFS/releases/download/v0.99.1/lakeFS_ 0.99.1_Linux_arm64.tar.gz"
-      sha256 "f5c82c74c3709c400e52866f15da940847e78275d9c66efc5f4294f11871e756"
+      url "https://github.com/treeverse/lakeFS/releases/download/v0.99.1/lakeFS_0.99.1_Linux_arm64.tar.gz"
+      sha256 "cb04fd82a31106c5a9d57cfa850ad90dab7615a15e4c9f4118e98176c7de2781"
 
       def install
         bin.install "lakectl"
@@ -39,8 +39,8 @@ class Lakefs < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/treeverse/lakeFS/releases/download/v0.99.1/lakeFS_ 0.99.1_Linux_x86_64.tar.gz"
-      sha256 "8fb0a5f5c15ad449046c591741add9a985bc31966130b6058a86f1693063757f"
+      url "https://github.com/treeverse/lakeFS/releases/download/v0.99.1/lakeFS_0.99.1_Linux_x86_64.tar.gz"
+      sha256 "b01f3e1d174ed9941f394857d3fe7a0b3b845c86202271fde4e78ddae90009f3"
 
       def install
         bin.install "lakectl"
