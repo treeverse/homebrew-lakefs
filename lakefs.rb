@@ -8,18 +8,18 @@ class Lakefs < Formula
   version "0.103.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/treeverse/lakeFS/releases/download/v0.103.0/lakeFS_0.103.0_Darwin_arm64.tar.gz"
-      sha256 "84c03f6ab7ea6a0c4d7203058e87155b4b53652ff6f8c0864344d8f59f3963b7"
+    if Hardware::CPU.intel?
+      url "https://github.com/treeverse/lakeFS/releases/download/v0.103.0/lakeFS_0.103.0_Darwin_x86_64.tar.gz"
+      sha256 "a679d21710ad97af4a971dff06b3d6fd5b4e2f273a9accc0e2af328ed307f926"
 
       def install
         bin.install "lakectl"
         bin.install "lakefs"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/treeverse/lakeFS/releases/download/v0.103.0/lakeFS_0.103.0_Darwin_x86_64.tar.gz"
-      sha256 "497f3d9d88122d2d6c6831572f4f8878efe64cdface5090610a134297c87574c"
+    if Hardware::CPU.arm?
+      url "https://github.com/treeverse/lakeFS/releases/download/v0.103.0/lakeFS_0.103.0_Darwin_arm64.tar.gz"
+      sha256 "811ee0d367927a8cd1279e4654c49279a894c3d2eee74e72e4922d06ecda8688"
 
       def install
         bin.install "lakectl"
@@ -31,7 +31,7 @@ class Lakefs < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/treeverse/lakeFS/releases/download/v0.103.0/lakeFS_0.103.0_Linux_x86_64.tar.gz"
-      sha256 "4e3b055919a02d83e557c9c75a834a86fad1b8cd979841c72a430e626cc9a7a5"
+      sha256 "67fc15235393ef3c66aa3216cac3525334dddee53809682cb404a177b6f9e95a"
 
       def install
         bin.install "lakectl"
@@ -40,7 +40,7 @@ class Lakefs < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/treeverse/lakeFS/releases/download/v0.103.0/lakeFS_0.103.0_Linux_arm64.tar.gz"
-      sha256 "7df68c7fe549ba571f6e40c61448a36ea4ea285769deb13fecb84aaac122d794"
+      sha256 "9796ee29f42e92741ec9cd1bc14d704330038abaadaf96bb69c32d4b673a305e"
 
       def install
         bin.install "lakectl"
