@@ -5,12 +5,12 @@
 class Lakefs < Formula
   desc "lakeFS is an open-source tool that transforms your object storage into a Git-like repository. It enables you to manage your data lake the way you manage your code."
   homepage "https://github.com/treeverse/lakefs"
-  version "1.39.2"
+  version "1.40.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/treeverse/lakeFS/releases/download/v1.39.2/lakeFS_1.39.2_Darwin_x86_64.tar.gz"
-      sha256 "fb947645ffc9639d1a5c4a6bd31f7127e7a0432e6079542ca65650cf3ed51751"
+      url "https://github.com/treeverse/lakeFS/releases/download/v1.40.0/lakeFS_1.40.0_Darwin_x86_64.tar.gz"
+      sha256 "614361bd5c4f7b17e388443adc1990cec2efeab9ff29a9b710d3bcf26c04f9b8"
 
       def install
         bin.install "lakectl"
@@ -18,8 +18,8 @@ class Lakefs < Formula
       end
     end
     on_arm do
-      url "https://github.com/treeverse/lakeFS/releases/download/v1.39.2/lakeFS_1.39.2_Darwin_arm64.tar.gz"
-      sha256 "3540a8ea08bbe38def26c329dc7b4d091a2ca0c3f1945af015662f7e2c0a488e"
+      url "https://github.com/treeverse/lakeFS/releases/download/v1.40.0/lakeFS_1.40.0_Darwin_arm64.tar.gz"
+      sha256 "2e4429f211d361ee4aa17d18c5542d3f727627eefc96d436fe1b4568c189bdb0"
 
       def install
         bin.install "lakectl"
@@ -31,8 +31,8 @@ class Lakefs < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/treeverse/lakeFS/releases/download/v1.39.2/lakeFS_1.39.2_Linux_x86_64.tar.gz"
-        sha256 "a12c05f74e6b3949643d0d498d8ace54fe56f559fc4b28742a336294a6634a39"
+        url "https://github.com/treeverse/lakeFS/releases/download/v1.40.0/lakeFS_1.40.0_Linux_x86_64.tar.gz"
+        sha256 "363ffc9193997569f79083f08886f99b18250c39015792d1aced8bf9a3181331"
 
         def install
           bin.install "lakectl"
@@ -42,8 +42,8 @@ class Lakefs < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/treeverse/lakeFS/releases/download/v1.39.2/lakeFS_1.39.2_Linux_arm64.tar.gz"
-        sha256 "9cfa128c763b17333a0dc470a1e72e54abf76c0f45239f1b15b1a8e3be2275d9"
+        url "https://github.com/treeverse/lakeFS/releases/download/v1.40.0/lakeFS_1.40.0_Linux_arm64.tar.gz"
+        sha256 "d06d0dc4aebdc8c88fc03e34723a420b6d201b883a1168088ac9b42f3aa76e13"
 
         def install
           bin.install "lakectl"
