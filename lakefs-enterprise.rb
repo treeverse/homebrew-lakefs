@@ -11,7 +11,7 @@ class LakefsEnterprise < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://treeverse-clients-us-east.s3.amazonaws.com/lakefs-enterprise/1.89.0/lakefs-enterprise_1.89.0_Darwin_x86_64.tar.gz"
-      sha256 "935a99be6419812d81909d1d75b0d07dd61fb79f9880a1d2cafb05e3b401e820"
+      sha256 "84d15824b237aef70f380f84592effab3c506e167bbb9ec33eac5c948868ade5"
 
       define_method(:install) do
         bin.install "lakectl"
@@ -20,7 +20,7 @@ class LakefsEnterprise < Formula
     end
     if Hardware::CPU.arm?
       url "https://treeverse-clients-us-east.s3.amazonaws.com/lakefs-enterprise/1.89.0/lakefs-enterprise_1.89.0_Darwin_arm64.tar.gz"
-      sha256 "6d28566d6d0609b74a43446208be580593fc17cbbf7ca698c9e67c7a22dad6d2"
+      sha256 "78156028b514f3af4709771904018484459d15ee851af4e2481cd027d3f4b15e"
 
       define_method(:install) do
         bin.install "lakectl"
@@ -32,7 +32,7 @@ class LakefsEnterprise < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://treeverse-clients-us-east.s3.amazonaws.com/lakefs-enterprise/1.89.0/lakefs-enterprise_1.89.0_Linux_x86_64.tar.gz"
-      sha256 "46ef84bd8505f809e06c928c35641af25834be43d0dbb050e8e3f5321065f5c9"
+      sha256 "d8d87d9c5fde044d40448c7b859b09b1ad278b2cd5a7fbe3239b8d0df0334f57"
       define_method(:install) do
         bin.install "lakectl"
         bin.install "lakefs"
@@ -40,7 +40,7 @@ class LakefsEnterprise < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://treeverse-clients-us-east.s3.amazonaws.com/lakefs-enterprise/1.89.0/lakefs-enterprise_1.89.0_Linux_arm64.tar.gz"
-      sha256 "be2f3003ac8ad025b8b78dd3ccd6622c9aa964b1ca4ae8d392600b87b0acb409"
+      sha256 "641005a4dc7d320286c90c47936e688088c218f938c6b0fd6ba809e1fdb1436f"
       define_method(:install) do
         bin.install "lakectl"
         bin.install "lakefs"
