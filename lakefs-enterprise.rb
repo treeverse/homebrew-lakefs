@@ -5,13 +5,13 @@
 class LakefsEnterprise < Formula
   desc "lakeFS Enterprise provides Git-like data version control with enterprise features including RBAC, SSO, and data replication."
   homepage "https://lakefs.io"
-  version "1.101.0"
+  version "1.101.1"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://treeverse-clients-us-east.s3.amazonaws.com/lakefs-enterprise/1.101.0/lakefs-enterprise_1.101.0_Darwin_x86_64.tar.gz"
-      sha256 "7a943ee1390c7df4634be3b3f8662827622530b71868e21e9dd885424b7f393c"
+      url "https://treeverse-clients-us-east.s3.amazonaws.com/lakefs-enterprise/1.101.1/lakefs-enterprise_1.101.1_Darwin_x86_64.tar.gz"
+      sha256 "530a9fb660695e08ce0e6b71e575bddfa33320b4705e640e88abd6a68b3e741f"
 
       define_method(:install) do
         bin.install "lakectl"
@@ -19,8 +19,8 @@ class LakefsEnterprise < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://treeverse-clients-us-east.s3.amazonaws.com/lakefs-enterprise/1.101.0/lakefs-enterprise_1.101.0_Darwin_arm64.tar.gz"
-      sha256 "e6c4cf88fc0f19998f09af4a9c83be9d9c0d90d88b36bf2adff0e633f4cc55e3"
+      url "https://treeverse-clients-us-east.s3.amazonaws.com/lakefs-enterprise/1.101.1/lakefs-enterprise_1.101.1_Darwin_arm64.tar.gz"
+      sha256 "3a51221bb54e35a2fb65752bc27a6a1865b61ff6c6c9337864c27920a4f54e76"
 
       define_method(:install) do
         bin.install "lakectl"
@@ -31,16 +31,16 @@ class LakefsEnterprise < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://treeverse-clients-us-east.s3.amazonaws.com/lakefs-enterprise/1.101.0/lakefs-enterprise_1.101.0_Linux_x86_64.tar.gz"
-      sha256 "664013f2257d11a5a511d5a9319162790ddb33d291cc64b6be16fa3a1fc294ae"
+      url "https://treeverse-clients-us-east.s3.amazonaws.com/lakefs-enterprise/1.101.1/lakefs-enterprise_1.101.1_Linux_x86_64.tar.gz"
+      sha256 "d753a6d088782ba1774fa768c56fe3cd67c1daadfcf271497269cf8bc771c2fe"
       define_method(:install) do
         bin.install "lakectl"
         bin.install "lakefs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://treeverse-clients-us-east.s3.amazonaws.com/lakefs-enterprise/1.101.0/lakefs-enterprise_1.101.0_Linux_arm64.tar.gz"
-      sha256 "c36002aad52dcb69b52604097d90d2d9bf170bb2bc7ac83141cc124222e6671b"
+      url "https://treeverse-clients-us-east.s3.amazonaws.com/lakefs-enterprise/1.101.1/lakefs-enterprise_1.101.1_Linux_arm64.tar.gz"
+      sha256 "5184b1e4f0ccf90ceefb0607ed0cb968645df5b84b9c2689e4c693dc4b6957b1"
       define_method(:install) do
         bin.install "lakectl"
         bin.install "lakefs"
